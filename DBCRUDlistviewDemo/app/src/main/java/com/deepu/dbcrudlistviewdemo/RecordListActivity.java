@@ -93,6 +93,8 @@ public class RecordListActivity extends AppCompatActivity {
         AlertDialog.Builder dialogDelete = new AlertDialog.Builder(RecordListActivity.this);
         dialogDelete.setTitle("Warning!!");
         dialogDelete.setMessage("Are you sure to delete?");
+        dialogDelete.setCancelable(false);
+
         dialogDelete.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
